@@ -25,8 +25,8 @@ kliens.on("message", message => {
   if (message.content.toLowerCase() === prefix + 'time?') {
     const sTime = new discord.RichEmbed()
     .setTitle(moment().add(2, 'hour').format('YYYY, MMMM, hh:mm:ss'))
-    .addField("Pontos idő?:", "Év: " + moment().add(2, 'hour').format("YYYY") + "\n" + "Hónap: " + moment().format("MMMM") + "\n" + moment().format("hh:mm:ss") )
-    .addField("Nap vegéig még: ", moment().add(2, 'hour').endOf('day').fromNow())
+    .addField("Pontos idő?:", "Év: " + moment().add(2, 'hour').format("YYYY") + "\n" + "Hónap: " + moment().format("MMMM") + "\n" + moment().add(2, 'hour').format("hh:mm:ss") )
+    .addField("Nap vegéig még: ", moment().endOf('day').fromNow())
     .addField("Minden egyben ??? ", moment().add(2, 'hour').format('LLLL'))
     message.channel.send(sTime)
   }
