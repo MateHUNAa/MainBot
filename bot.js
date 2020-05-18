@@ -258,7 +258,7 @@ const serverStats = {
 //idul ------------------------------------------
 kliens.on("ready", () => {
     const time = new Date()
-    kliens.channels.get("711518249749184512").setName(`Time: ${moment(time).format('hh:mm')}`)
+    kliens.channels.get("711518249749184512").setName(`Time: ${moment(time).add(2, 'hour').format('hh:mm')}`)
     console.log("A Bot Sikeressen Elindult! Ekkor: " + moment().format("LLLL"));
     kliens.user.setActivity(" ");
 });
