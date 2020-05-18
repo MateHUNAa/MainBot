@@ -20,6 +20,7 @@ kliens.registry.registerCommandsIn(__dirname + "/commands");
 
 //Mennyi az idő -----------------------
 moment.locale("hu")
+
 kliens.on("message", message => {
   if (message.content.toLowerCase() === prefix + 'time?') {
     const sTime = new discord.RichEmbed()
@@ -222,7 +223,7 @@ setInterval(function() {
 
 setInterval(function(){
   const time2 = new Date()
-  kliens.channels.get("711518249749184512").setName(`Time: ${moment(time2).format('hh:mm')}`)
+  kliens.channels.get("711518249749184512").setName(`Time: ${moment(time2).add('2 hour').format('hh:mm')}`)
 }, 60*1000);
 
 
