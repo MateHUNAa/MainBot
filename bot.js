@@ -221,7 +221,7 @@ setInterval(function() {
 //server stats
 
 setInterval(function(){ 
-  kliens.channels.get("711518249749184512").setName(`Time ${moment().format('LT')}`)
+  kliens.channels.get("711518249749184512").setName(`Time: ${moment().format('LT')}`)
 }, 60*1000);
 
 
@@ -255,7 +255,7 @@ const serverStats = {
 
 //idul ------------------------------------------
 kliens.on("ready", () => {
-  kliens.channels.get("711518249749184512").setName(`Time ${moment().format('LT')}`)
+    kliens.channels.get("711518249749184512").setName(`Time: ${moment().format('LT')}`)
     console.log("A Bot Sikeressen Elindult! Ekkor: " + moment().format("LLLL"));
     kliens.user.setActivity(" ");
 });
