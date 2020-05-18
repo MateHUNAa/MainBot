@@ -220,8 +220,9 @@ setInterval(function() {
 
 //server stats
 
-setInterval(function(){ 
-  kliens.channels.get("711518249749184512").setName(`Time: ${moment().format('hh:mm')}`)
+setInterval(function(){
+  const time2 = new Date()
+  kliens.channels.get("711518249749184512").setName(`Time: ${moment(time2).format('hh:mm')}`)
 }, 60*1000);
 
 
