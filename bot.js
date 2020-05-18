@@ -223,7 +223,7 @@ setInterval(function() {
 
 setInterval(function(){
   const time2 = new Date()
-  kliens.channels.get("711518249749184512").setName(`Time: ${moment(time2).add('2 hour').format('hh:mm')}`)
+  kliens.channels.get("711518249749184512").setName(`Time: ${moment(time2).add(2, 'hour').format('hh:mm')}`)
 }, 60*1000);
 
 
