@@ -78,6 +78,7 @@ kliens.on("message", async message => {
     .addField('Time: ', moment().format('YYYY, MMMM, hh:mm:ss'))
     .addField('Indok: ', reson)
     let repch = message.guild.channels.find(channel => channel.name === 'reportlog')
+    message.channel.send("Reportodat el küldtük!")
     repch.send(reportEmbed)
     return;
   }
