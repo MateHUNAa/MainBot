@@ -93,7 +93,7 @@ kliens.on("message", message => {
     if (message.author.bot) return;
     if (message.author.id === "674997482609967116") return;
 
-    let szavak = ["discord.gg/", "kurva", "kurva anyád", "gyökér", "cigány", "geci", "bazdmeg", "kutya", "anyád", "balfasz", "baszott", "bazd", "fuck", "mother", "shit", "motherfucker", "fasz", "pina", "te retkes idota", "idiota", "faszopó", "köcsög", "bolond", "buzi", "nyomorék", "nyomorék", "bazd", "bazdmeg", "basz", "baszadék", "nyomo", "anyukád", "maradvány", "Kulák", "picsa"]
+    let szavak = ["discord.gg/", "kurva", "tetves", "Farokarcú", "farok", "görény", "kurva anyád", "gyökér", "cigány", "geci", "bazdmeg", "kutya", "anyád", "balfasz", "baszott", "bazd", "fuck", "mother", "shit", "motherfucker", "fasz", "pina", "te retkes idota", "idiota", "faszopó", "köcsög", "bolond", "buzi", "nyomorék", "nyomorék", "bazd", "bazdmeg", "basz", "baszadék", "nyomo", "anyukád", "maradvány", "Kulák", "picsa"]
     let talalt = false;
     for (var a in szavak) {
          if (message.content.toLowerCase().includes(szavak[a].toLowerCase())) talalt = true;
