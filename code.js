@@ -36,6 +36,8 @@ kliens.on('message', async (message) =>
 //---------------------------------####COMMAND__HANDLER####-------------------------------------------\\
 
 
+
+
 // Ha nem lenne rangom a szerveremen
 
 
@@ -327,7 +329,6 @@ const serverStats = {
 kliens.on("ready", () => {
   kliens.channels.get("711518249749184512").setName(`Time ${moment().format('LT')}`)
     console.log("A Bot Sikeressen Elindult! Ekkor: " + moment().format("LLLL"));
-    kliens.user.setActivity(" ");
 });
 //Inul vége ---------------------------------------------
 
