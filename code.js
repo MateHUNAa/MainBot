@@ -275,7 +275,7 @@ y.addListener("data", res => {
 //Console Chatter -------------------------------
 
 //Changing Status -------------------------------
-
+/*6
 let activNum = 0;
 setInterval(function() {
     if (activNum === 0 ) {
@@ -285,7 +285,7 @@ setInterval(function() {
        kliens.user.setActivity("️✍️!help✍️", {type: "WATCHING"});
        activNum = 0;
      }
-}, 10*1000);
+}, 10*1000);*/
 
 
 //Changing Status -------------------------------
