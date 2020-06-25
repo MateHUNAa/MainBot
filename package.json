@@ -8,10 +8,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "moment": "^2.25.3",
-    "start": "^5.1.0",
-    "discord.js-commando": "0.10.0",
-    "discord.js": "11.6.1"
+    "discord.js": "^11.6.4",
+    "discord.js-commando": "^0.10.0",
+    "moment": "^2.27.0",
+    "start": "^5.1.0"
   },
   "devDependencies": {},
   "description": ""
